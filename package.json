@@ -1,0 +1,24 @@
+{
+  "name": "test_good_doctor_maidzola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maidzola/test_good_doctor_maidzola.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maidzola/test_good_doctor_maidzola/issues"
+  },
+  "homepage": "https://github.com/maidzola/test_good_doctor_maidzola#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  }
+}
