@@ -14,7 +14,7 @@ Automation pada repository ini **tidak** mencakup scenario untuk mobile app
 karena kendala teknis berikut:
 
 1. **Tidak ada APK dummy / environment testing.**
-   TC_001 mensyaratkan aksi di dalam aplikasi mobile native (login,
+   Test case (No.3) mensyaratkan aksi di dalam aplikasi mobile native (login,
    navigasi ke "Consult a Doctor", pilih dokter, mulai konsultasi).
    Tanpa APK dummy/staging build dan tanpa akses inspect elemen
    (resource-id) aplikasi produksi, automation mobile (Appium/Espresso)
@@ -35,7 +35,7 @@ pengambilan screenshot.
 
 > Catatan: Jika ke depannya tersedia APK/staging build dan akun test
 > (bukan akun pribadi), kerangka automation ini bisa diperluas ke
-> Appium untuk menguji TC_001 secara end-to-end, termasuk context
+> Appium untuk menguji Test Case (No.3) secara end-to-end, termasuk context
 > switching antara native view dan WebView pada bagian chat/video
 > konsultasi.
 
