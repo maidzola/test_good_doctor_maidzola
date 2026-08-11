@@ -14,6 +14,7 @@ Automation pada repository ini **tidak** mencakup scenario untuk mobile app
 karena kendala teknis berikut:
 
 1. **Tidak ada APK dummy / environment testing.**
+   
    Test case (No.3) mensyaratkan aksi di dalam aplikasi mobile native (login,
    navigasi ke "Consult a Doctor", pilih dokter, mulai konsultasi).
    Tanpa APK dummy/staging build dan tanpa akses inspect elemen
@@ -21,6 +22,7 @@ karena kendala teknis berikut:
    tidak bisa dibuat secara akurat dan aman untuk dijalankan.
 
 2. **Skenario login tidak diikutsertakan.**
+   
    Login memerlukan kredensial pengguna. Karena kredensial ini sensitif
    (terhubung ke akun asuransi pribadi/CAR Syariah milik penulis) dan
    tidak boleh disimpan/dihardcode di dalam script, skenario yang
