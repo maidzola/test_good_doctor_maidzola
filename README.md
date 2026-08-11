@@ -2,18 +2,16 @@
 
 ## Deskripsi
 
-Repository ini berisi automation test sederhana menggunakan **Playwright**
+Repository ini berisi automation test menggunakan **Playwright**
 yang menguji situs publik **Good Doctor** (`https://www.gooddoctor.co.id/`).
 
-Automation ini dibuat sebagai bagian dari pengerjaan **Test Case No. 4**
-(SQA Engineer Test), yang aslinya meminta automation test untuk skenario
-**TC_001 - Start a Consultation with a Doctor** pada **aplikasi mobile**
-Good Doctor.
+Automation ini dibuat sebagai bagian dari pengerjaan **Question No. 4**
+(SQA Engineer Test).
 
 ## Batasan / Ruang Lingkup
 
-Automation pada repository ini **tidak** mencakup skenario penuh TC_001
-karena dua kendala teknis berikut:
+Automation pada repository ini **tidak** mencakup scenario untuk mobile app
+karena kendala teknis berikut:
 
 1. **Tidak ada APK dummy / environment testing.**
    TC_001 mensyaratkan aksi di dalam aplikasi mobile native (login,
