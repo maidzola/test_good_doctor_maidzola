@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/blob-report/
+
+# Test artifacts
+*.png
+*.webm
+*.zip
+
+# OS files
+.DS_Store
+
+# Environment variables (kalau nanti ada)
+.env
