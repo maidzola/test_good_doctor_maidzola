@@ -5,7 +5,7 @@
 Repository ini berisi automation test sederhana menggunakan **Playwright**
 yang menguji situs publik **Good Doctor** (`https://www.gooddoctor.co.id/`).
 
-Automation ini dibuat sebagai bagian dari pengerjaan **Question No. 4**
+Automation ini dibuat sebagai bagian dari pengerjaan **Test Case No. 4**
 (SQA Engineer Test), yang aslinya meminta automation test untuk skenario
 **TC_001 - Start a Consultation with a Doctor** pada **aplikasi mobile**
 Good Doctor.
@@ -77,14 +77,18 @@ npx playwright install
 
 ## Cara Menjalankan
 
+> File test ada di dalam folder `tests/`, tapi karena `playwright.config.js`
+> sudah diatur dengan `testDir: './tests'`, kamu tidak perlu menyebut path
+> lengkap — cukup jalankan `npx playwright test` dari root project.
+
 **Jalankan semua test (mode headless / tanpa tampilan browser):**
 ```bash
-npx playwright test gooddoctor.spec.js
+npx playwright test
 ```
 
 **Jalankan sambil melihat browser-nya secara langsung:**
 ```bash
-npx playwright test gooddoctor.spec.js --headed
+npx playwright test --headed
 ```
 
 **Jalankan dengan UI Mode (paling enak untuk cek step demi step):**
@@ -96,7 +100,7 @@ melihat browser di sisi kanan dan timeline tiap langkah di sisi kiri.
 
 **Jalankan dengan mode debug (browser + inspector, bisa pause manual):**
 ```bash
-npx playwright test gooddoctor.spec.js --debug
+npx playwright test --debug
 ```
 
 ## Melihat Hasil / Report
@@ -111,18 +115,19 @@ Screenshot homepage akan tersimpan di root folder project sebagai
 
 ## Hasil Test Run
 
-Berikut hasil run terakhir (11/08/2026, 16:44:16 — total waktu 8.4s), semua skenario passed:
+Berikut hasil run terakhir (11/08/2026, 16:44:16 — total waktu 8.4s),
+semua skenario **passed**:
 
-Status	Test	Durasi
-✅ Passed	Buka homepage dan cek judul halaman	1.9s
-✅ Passed	Navigasi ke menu "Untuk Anda"	1.8s
-✅ Passed	Navigasi ke halaman Berita dan buka salah satu artikel	2.1s
-✅ Passed	Screenshot halaman utama	2.1s
+| Status | Test | Durasi |
+|--------|------|--------|
+| ✅ Passed | Buka homepage dan cek judul halaman | 1.9s |
+| ✅ Passed | Navigasi ke menu "Untuk Anda" | 1.8s |
+| ✅ Passed | Navigasi ke halaman Berita dan buka salah satu artikel | 2.1s |
+| ✅ Passed | Screenshot halaman utama | 2.1s |
 
-Ringkasan: All 4 · Passed 4 · Failed 0 · Flaky 0 · Skipped 0
+**Ringkasan:** All 4 · Passed 4 · Failed 0 · Flaky 0 · Skipped 0
 
 Report lengkap (HTML) dapat dilihat dengan menjalankan:
-
 ```bash
 npx playwright show-report
 ```
